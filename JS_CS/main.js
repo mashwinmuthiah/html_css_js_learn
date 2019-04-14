@@ -154,18 +154,43 @@ function people(firstName,lastName,dob){
     this.firstName = firstName;
     this.lastName = lastName;
     this.dob =new Date(dob);
-
     }
 
 people.prototype.fullname = function(){
     return `${this.firstName} ${this.lastName}`;
 }
 people.prototype.getBirthYear = function(){
-    return this.dob.getFullYear();
+    return (this.dob.getFullYear());
 }
-
+// Instantiate object
 const people1 = new people('john','doe','4-3-1980')
 const people2 = new people('ash','mut','5-3-1980')
 
 console.log(people1.getBirthYear(),people2.getBirthYear())
 console.log(people2)
+
+//class
+class peoples{
+    constructor(firstName,lastName,dob){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob =new Date(dob);
+    }
+    getBirthYear(){
+        return (this.dob.getFullYear());
+        
+    }
+    fullname(){
+        return `${this.firstName} ${this.lastName}`;
+    }
+
+}
+
+// Instantiate object
+const peoples1 = new peoples('john','doe','4-3-1980')
+const peoples2 = new peoples('ash','mut','5-3-1980')
+
+console.log(peoples1.getBirthYear(),peoples2.getBirthYear())
+console.log(peoples2)
+
+
