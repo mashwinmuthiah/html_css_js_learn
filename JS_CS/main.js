@@ -126,6 +126,46 @@ else {
 }
 
 // ternary operator
-const x = 10;
 const color = x > 10 ? 'red' : 'blue';
 // if x>10 then red else blue
+
+// switch
+switch(color){
+    case 'red':
+        console.log("color is red");
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('Color is Not');
+
+}
+
+//functions
+function addNums(num1 = 1,num2 = 3){
+    return(num1+num2);
+}
+
+console.log(addNums());
+
+// Objecr oriented programming
+function people(firstName,lastName,dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob =new Date(dob);
+
+    }
+
+people.prototype.fullname = function(){
+    return `${this.firstName} ${this.lastName}`;
+}
+people.prototype.getBirthYear = function(){
+    return this.dob.getFullYear();
+}
+
+const people1 = new people('john','doe','4-3-1980')
+const people2 = new people('ash','mut','5-3-1980')
+
+console.log(people1.getBirthYear(),people2.getBirthYear())
+console.log(people2)
