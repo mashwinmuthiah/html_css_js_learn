@@ -88,21 +88,24 @@ for (let todo of todos){
     break;
 }
 
-// for each,map,filter
+// foreach
 
 const a = todos.forEach(function(todo) {
     console.log(todo.text);
 
 });
 
+//map
 const b = todos.map(function(todo) {
     return todo.text;
 });
-
 console.log(b)
 
+
+//filter
 const c = todos.filter(function(todo){
     return todo.isComplete === false;
-});
-
+}).map(function(todo){
+    return todo.text
+})
 console.log(c)
