@@ -109,3 +109,23 @@ const c = todos.filter(function(todo){
     return todo.text
 })
 console.log(c)
+
+//if-else statements
+
+const x = 4;
+const y = 10;
+
+if(x===5 || y>10){
+    console.log('x is 5 or y is 10');
+}
+else if(x===4 && y===10){
+    console.log('X is greater than 10');
+}
+else {
+    console.log('x is lesser than 10');
+}
+
+// ternary operator
+const x = 10;
+const color = x > 10 ? 'red' : 'blue';
+// if x>10 then red else blue
