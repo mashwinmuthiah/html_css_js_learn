@@ -1,3 +1,26 @@
-body{
-    background-color: white
+*{
+    background-color: white;
+    padding: 20px;
+}
+
+p,li{
+    font-size: 12px;
+    line-height: 14px;
+    color: red;
+}
+
+p em{
+    font-size: 50px;
+}
+
+/* this is a comment */
+
+h1.highlight{
+    color: black;
+    background-color: yellow;
+}
+
+p.highlight {
+    color: black;
+    background-color: yellow;
 }
