@@ -6,12 +6,21 @@
 html,body{
     height: 100%;
 }
+
+.site-title-all{
+    float: left;
+}
+.site-heading{
+    font-size:10px
+}
+
+#neulogoimg{
+    height: 95px;
+    float:right;
+    padding: 10px 10px 10px 10px;
+}
 .wrap {
     max-width: 800px;
     padding: 0 30px;
     margin: 0 auto;
     zoom: 1; }
-
-.site-heading{
-    font-size: 
-}
