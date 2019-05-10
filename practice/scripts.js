@@ -70,7 +70,33 @@ Code	Output
 
  firstLetter = fname[0];
 
- console.log(firstLetter)
- console.log(fname[fname.length-1]);
+ console.log(firstLetter) // first letter
+ console.log(fname[fname.length-1]); //last letter
 
- 
+ //function
+function adding(one,two,three,four) {
+    var result;
+    result = one+two+three+four;
+    return result;
+}
+console.log(adding("Ashwin ","Muthiah ","Murugappan ","Northeastern "));
+
+//Array
+var ar1 = ["Ashwin","Muthiah"];
+console.log(ar1);
+
+var ar2 = [["as","hw"],["in","mu"]];
+console.log(ar2);
+
+var myarr = ['a','b','c','d','e','f'];
+var mydata = myarr[2];
+console.log(mydata);
+// arrays are mutables by indexs
+myarr[2] = 'Z';
+console.log(myarr);
+
+console.log(ar2[0][0]);
+
+//appending - Push
+myarr.push(['b','b','b','b'])
+console.log(myarr);
