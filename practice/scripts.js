@@ -65,3 +65,12 @@ Code	Output
  var fname = "ashwin";
  var lname = "murugappan";
  console.log("my first name is "+fname+" and my last name is "+lname);
+
+ console.log(fname.length);
+
+ firstLetter = fname[0];
+
+ console.log(firstLetter)
+ console.log(fname[fname.length-1]);
+
+ 
