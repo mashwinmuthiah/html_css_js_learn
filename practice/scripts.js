@@ -130,3 +130,13 @@ function trueorfalse(value){
 }
 
 trueorfalse(value)
+
+function testequality(val) {
+    if (val == 12){
+        return "Equal";
+    }
+    else{
+        return "Not equal";
+    }
+}
+console.log(testequality(12));
