@@ -25,14 +25,14 @@ var mydec = 5.544545544
 console.log(mydec);
 
 //plus equals operatior
- a += 12;
+a += 12;
  console.log(a);
  a-= 5;
  console.log(a);
 
  //variables 
  var mystring = "This is a javascript string";
- console.log(mystring);
+ console.log(mystring); 
 
 var mystr = "This is a \"double quoted \" string inside a string";
 console.log(mystr); 
@@ -100,3 +100,33 @@ console.log(ar2[0][0]);
 //appending - Push
 myarr.push(['b','b','b','b'])
 console.log(myarr);
+
+// Scope - local and global 
+var globals = 5;
+
+function myfun(){
+    if (globals == 5){
+        console.log("globals is defined"); 
+    }
+}
+
+function myfun2(){
+    q = 5;
+}
+myfun();
+
+// console.log(q); - will shoutout an error as q is not global.
+
+// If statements
+
+var value = false;
+function trueorfalse(value){
+    if(value){
+        console.log("The valse is True");
+    }
+    else{
+        console.log("The value is False");
+    }
+}
+
+trueorfalse(value)
