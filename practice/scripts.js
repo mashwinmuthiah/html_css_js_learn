@@ -174,3 +174,24 @@ function checkprop(p_name){
 
 checkprop("first_name");
 checkprop("dsfgsfg");
+
+// Iteration with loops
+
+//While
+myarr = [];
+i = 0;
+while(i<5){
+    myarr.push(i);
+    i++;
+}
+console.log(myarr);
+
+//for loop
+
+myarr = [];
+n = 6;
+for (i = 0;i<n;i++){
+    myarr.push(i)
+}
+
+console.log(myarr);
