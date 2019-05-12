@@ -158,5 +158,19 @@ console.log(myobject.first_name);
 myobject["school"] = "SBOA";
 console.log(myobject);
 
-delete myobject.school;
+delete myobject.school; // Delete a property
 console.log(myobject);
+
+//check for property in objects  - hadOwnProperty
+
+function checkprop(p_name){
+    if(myobject.hasOwnProperty(p_name)){
+        console.log(myobject[p_name]);
+    }
+    else{
+        console.log("Property Doesn't Exist");
+    }
+}
+
+checkprop("first_name");
+checkprop("dsfgsfg");
