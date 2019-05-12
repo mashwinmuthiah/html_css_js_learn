@@ -195,3 +195,36 @@ for (i = 0;i<n;i++){
 }
 
 console.log(myarr);
+//printing even numbers
+
+a = []
+for (i = 0;i<n;i+=2){
+    a.push(i);
+}
+
+// going through the array
+
+myarr = [10,12,14,16,18,20];
+var s = 0;
+for(i = 0;i<myarr.length;i++){
+    s = s+myarr[i];
+}
+
+console.log(s);
+
+console.log(Math.random()); // random decimal 
+console.log(Math.floor(Math.random() * 20));
+console.log(Math.floor(Math.random()*9));
+
+//Type convertion
+
+console.log(parseInt("12324",10));
+
+//Ternary operator
+
+a = 1234;
+b = 1234;
+
+console.log(a+1 === b+1 ? "same" : "Not same");
+
+console.log(a+1 === b+1 ? "Same" : a<b ? "A is Smaller" : "B is smaller");
