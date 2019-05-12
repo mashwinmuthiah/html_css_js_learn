@@ -140,3 +140,23 @@ function testequality(val) {
     }
 }
 console.log(testequality(12));
+
+//objects 
+
+var myobject = {
+    "first_name":"Ashwin",
+    "last_name":"Muthiah",
+};
+
+myobject.first_name = "Ashwin Muthiah";
+myobject.last_name = "Murugappan";
+
+myobject["university"] = "Northeastern";
+
+console.log(myobject.first_name);
+
+myobject["school"] = "SBOA";
+console.log(myobject);
+
+delete myobject.school;
+console.log(myobject);
