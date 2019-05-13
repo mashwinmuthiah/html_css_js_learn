@@ -228,3 +228,68 @@ b = 1234;
 console.log(a+1 === b+1 ? "same" : "Not same");
 
 console.log(a+1 === b+1 ? "Same" : a<b ? "A is Smaller" : "B is smaller");
+
+// filter and map 
+
+const realNumberArray = [4,5.6,-5,5.3,3,2,5.5];
+const squareList = (arr) => {
+    const squatedInteger = arr.filter(num => Number.isInteger(num)&& num>0).map(x => x*x);
+    console.log(squatedInteger);
+}
+
+squareList(realNumberArray);
+
+//Copy array
+arr1 = [1,2,3,4,5,6,7,8,9];
+arr2 = [...arr1];
+arr1[0] = "Ashwin";
+console.log(arr1,arr2);
+
+//Destructuring assignment - objects
+
+myobject = {
+    "today":{"min":40,"max":90},
+    "tomorrow":{"min":50,"max":95}
+};
+
+const {tomorrow:{min:may13th}} = myobject;
+
+console.log(may13th);
+
+//Remove first 2 elements
+
+const souce = [1,2,3,4,5,6,7,8,9];
+var list;
+const [,,...x] = souce;
+console.log(x);
+
+// Destructuring assignmny when passing argument
+var myarra = {
+    'f_name' : 'ashwin',
+    'l_name' : 'muthiah',
+    'phone' : 1234567898,
+    'email' : "whatever@SpeechGrammarList.com"
+}
+
+console.log(myarra);
+
+function myfun3({f_name,l_name}){
+    return f_name + l_name;
+}
+console.log(myfun3(myarra));
+
+//Template literals 
+
+console.log(`Hi !! my name is ${myarra.f_name} and my number is ${myarra.phone}`);
+
+// Creating a method
+var got = {
+    'a':1,
+    'b':2,
+    'c':3,
+    'sum': function(){
+        return this.a+this.b;
+    }
+};
+
+console.log(got.sum());
