@@ -287,9 +287,9 @@ var got = {
     'a':1,
     'b':2,
     'c':3,
-    'sum': function(){
-        return this.a+this.b;
+    'sum': function(a,b){
+        return a+b;
     }
 };
 
-console.log(got.sum());
+console.log(got.sum(5,4));
