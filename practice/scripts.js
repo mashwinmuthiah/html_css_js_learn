@@ -293,3 +293,5 @@ var got = {
 };
 
 console.log(got.sum(5,4));
+
+var zebra  = "amazing";
